@@ -1,0 +1,30 @@
+.container-list-services {
+  display: flex;
+  width: calc(50% - 7.5px);
+  .category-service-name {
+    width: calc(16.66vw - 2px);
+  }
+}
+
+@media (max-width: 800px) {
+  .capabilities-container {
+    .listcontent-intro {
+      display: flex;
+      flex-direction: column;
+      h4 {
+        width: 100%;
+      }
+    }
+  }
+
+  .container-list-services {
+    margin-top: 5vh;
+    width: 100%;
+    .category-service-name {
+      width: calc((16.66vw + 13px) * 2);
+    }
+    p {
+      width: fit-content;
+    }
+  }
+}

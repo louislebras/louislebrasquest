@@ -1,0 +1,62 @@
+.aboutsection {
+  video {
+    width: calc((16.667% + 2.5px) * 2);
+    height: 70vh;
+    margin-left: calc((16.667% + 2.5px) * 2);
+    // border: 1px solid red;
+    border-radius: 4000px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutsection {
+    margin-top: 20px;
+    p {
+      text-indent: 0;
+    }
+
+    video {
+      width: 100%;
+      margin-left: 0;
+      height: 65vh;
+    }
+  }
+}
+
+.capabilities-container {
+  .listcontent-intro {
+    h4 {
+      padding: 0;
+    }
+
+    .container-list-services {
+      width: 35%;
+      margin-right: calc(15% - 7.5px);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .capabilities-container {
+    .listcontent-intro {
+      .container-list-services {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.ifyouneed-aboutpage {
+  .empty-macaron {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 700px;
+    // line-height: 100%;
+  }
+}
+
+.historic-aboutpage {
+  display: flex;
+  flex-direction: column;
+}

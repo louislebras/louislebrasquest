@@ -1,0 +1,114 @@
+.heading-home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: -10px;
+}
+
+@media (max-width: 800px) {
+  .heading-home {
+    height: 95vh;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+  }
+}
+
+.container-infos-heading {
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10vh;
+  position: relative;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .container-infos-heading {
+    margin-top: 20vh;
+  }
+}
+
+.monogram-heading-home {
+  width: 50px;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .monogram-heading-home {
+    width: 30px;
+  }
+}
+
+.branding-louislebras {
+  width: 70%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .branding-louislebras {
+    margin-top: 9vh;
+    width: 90%;
+  }
+}
+
+.scroll-indication {
+  display: none;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .scroll-indication {
+    display: flex;
+    position: absolute;
+    top: 90%;
+    animation: scroll-indic 3s ease-out infinite;
+    // opacity: 0s;
+  }
+
+  @keyframes scroll-indic {
+    0% {
+      top: 90%;
+      opacity: 0;
+    }
+
+    10% {
+      top: 90%;
+      opacity: 1;
+    }
+
+    40% {
+      top: 85%;
+      opacity: 0;
+    }
+
+    100% {
+      top: 90%;
+      opacity: 0;
+    }
+  }
+}
+
+.back-heading-home {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  margin-left: -15px;
+
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  //   border: 1px solid red;
+  z-index: 0;
+}
+
+@media (max-width: 800px) {
+  .back-heading-home {
+    height: 90vh;
+  }
+}

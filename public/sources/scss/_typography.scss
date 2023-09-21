@@ -1,0 +1,156 @@
+a {
+  color: $light;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.italic {
+  font-family: $themefontitalic;
+}
+
+.underlined {
+  outline: 0;
+  text-decoration: none;
+  color: currentColor;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
+  }
+}
+
+.underlined2 {
+  outline: 0;
+  text-decoration: none;
+  color: currentColor;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
+  }
+}
+
+.macaron {
+  background: $light;
+  color: $dark;
+  padding: 0.6em 1.2em 0.55em;
+  border-radius: 25px;
+  width: fit-content;
+  font-size: calc(
+    20px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: 0em;
+  line-height: 100%;
+  font-family: $classicfont;
+  display: flex;
+  align-items: center;
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 10px;
+    position: relative;
+    left: -3px;
+    margin-right: 3px;
+    top: -0.5px;
+  }
+}
+
+.empty-macaron {
+  border: 1px solid $light;
+  padding: 0.65em 1.2em 0.7em;
+  border-radius: 25px;
+  width: fit-content;
+  font-size: calc(
+    20px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.01em;
+  line-height: 100%;
+  font-family: $classicfont;
+
+  &:hover {
+    background-color: $light;
+    color: $dark;
+  }
+}
+
+@media (max-width: 800px) {
+  .macaron {
+    font-size: 11px;
+  }
+  .empty-macaron {
+    font-size: 11px;
+  }
+}
+
+.smalltext {
+  font-size: calc(
+    20px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.01em;
+  line-height: 130%;
+  font-family: $classicfont;
+}
+
+@media (max-width: 800px) {
+  .smalltext {
+    font-size: 12px;
+  }
+  .sidebar-text {
+    font-size: 36px;
+    line-height: 100%;
+    font-family: $themefont;
+  }
+}
+
+.mediumtext {
+  font-family: $themefont;
+  font-size: calc(
+    32px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.04em;
+  line-height: 150%;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .mediumtext {
+    font-size: 19px;
+  }
+}
+
+.bigtext {
+  font-family: $themefont;
+
+  font-size: calc(
+    85px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 120
+  );
+  letter-spacing: -0.03em;
+  line-height: 120%;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .bigtext {
+    font-size: 30px;
+  }
+}

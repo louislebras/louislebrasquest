@@ -1,0 +1,43 @@
+.aboutsection {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    padding-left: calc(16.667% + 4px);
+  }
+  p {
+    margin-top: 20px;
+    text-indent: calc(16.667% + 4px);
+  }
+}
+
+.profile-louislebras {
+  width: calc((16.667% + 2px) * 3);
+  margin-left: calc((50% + 6px) - 16.667%);
+  filter: saturate(0.8) brightness(1.4);
+}
+
+.linktoabout,
+.linktocontact {
+  margin-left: calc((50% + 7.5px));
+}
+
+.linktocontact {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .aboutsection {
+    h3 {
+      padding: 0;
+    }
+  }
+  .profile-louislebras {
+    width: 100%;
+    margin: 0;
+  }
+
+  .linktoabout,
+  .linktocontact {
+    margin-left: calc((16.667% + 7.5px));
+  }
+}

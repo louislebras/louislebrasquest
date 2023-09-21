@@ -1,0 +1,55 @@
+.fullstaminaclub {
+  height: 100vh;
+  //   background-color: green;
+  width: 100vw;
+  margin-left: -15px;
+  padding: 10vh 15px 0px;
+  position: relative;
+
+  p {
+    position: relative;
+    // mix-blend-mode: difference;
+  }
+
+  .groupitems-wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 20px;
+    span {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .groupitems-wrap {
+      width: 100%;
+    }
+  }
+
+  .logo-staminaclub-aboutstamina {
+    position: absolute;
+    bottom: 40px;
+    width: 110px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  .back-staminaclub {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+  }
+}
+
+.linktostaminaclub {
+  margin-left: calc((50% + 7.5px));
+  position: relative;
+}

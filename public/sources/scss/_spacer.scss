@@ -1,0 +1,19 @@
+.little-spacer {
+  height: 10vh;
+}
+
+@media (max-width: 800px) {
+  .little-spacer {
+    height: 6vh;
+  }
+}
+
+.medium-spacer {
+  height: 22vh;
+}
+
+@media (max-width: 800px) {
+  .medium-spacer {
+    height: 12vh;
+  }
+}

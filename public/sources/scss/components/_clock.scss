@@ -1,0 +1,55 @@
+.dot-hour {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  position: relative;
+  width: fit-content;
+  position: fixed;
+  bottom: 12px;
+  //   left: 50%;
+  //   transform: translate(-50%, -0%);
+  z-index: 10;
+  // justify-content: center;
+  //   border: 1px solid red;
+}
+
+.dot {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  animation: dotClick 1.5s linear infinite;
+  position: relative;
+  top: 0.5px;
+}
+
+.hour {
+  display: flex;
+  //   font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0px;
+  margin-left: 10px;
+}
+
+@keyframes dotClick {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 800px) {
+  .dot-hour {
+    display: none;
+  }
+}

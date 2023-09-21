@@ -1,0 +1,22 @@
+@import "./reset", "./variables", "./typography", "./spacer", "./header",
+  "./footer", "./fonts", "./loader", "./noise", "./columns";
+
+html,
+Body {
+  background-color: $dark;
+  color: $light;
+  font-family: $classicfont;
+}
+
+body {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px 0px;
+}
+
+main {
+  position: relative;
+}
