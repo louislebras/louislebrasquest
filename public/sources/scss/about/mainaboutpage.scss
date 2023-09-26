@@ -4,6 +4,7 @@
     height: 70vh;
     margin-left: calc((16.667% + 2.5px) * 2);
     // border: 1px solid red;
+    filter: saturate(0.7);
     border-radius: 4000px;
     object-fit: cover;
   }
@@ -31,8 +32,13 @@
     }
 
     .container-list-services {
-      width: 35%;
-      margin-right: calc(15% - 7.5px);
+      width: 40%;
+      margin-right: calc(10% - 7.5px);
+
+      p {
+        margin-bottom: 10px;
+        line-height: 170%;
+      }
     }
   }
 }
@@ -48,10 +54,15 @@
 }
 
 .ifyouneed-aboutpage {
+  .container-list-services {
+    display: flex;
+    flex-direction: column;
+  }
   .empty-macaron {
     width: fit-content;
     height: fit-content;
     border-radius: 700px;
+    line-height: 130% !important;
     // line-height: 100%;
   }
 }
@@ -59,4 +70,29 @@
 .historic-aboutpage {
   display: flex;
   flex-direction: column;
+
+  h3 {
+    padding-left: calc(16.667% + 3px);
+  }
+
+  .listcontent-intro {
+    h4 {
+      padding-left: calc(16.667% + 3px);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .historic-aboutpage {
+    h3 {
+      padding-left: 0;
+    }
+
+    .listcontent-intro {
+      h4 {
+        padding-left: 0;
+        width: 100%;
+      }
+    }
+  }
 }

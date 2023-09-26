@@ -8,9 +8,20 @@
     <link rel="stylesheet" href="./public/sources/css/main.css">
     <link rel="stylesheet" href="./public/sources/css/home/main-home.css">
     <link rel="stylesheet" href="./public/sources/css/components/main-components.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
 </head>
 
+
 <body>
+    <div class="loader">
+
+        <div class="container-img-loader">
+            <img src="./public/content/brand/brand-staminaclub-monogram-louislebras.svg"
+                alt="trademark Stamina Vision® Louis Le Bras Donloulou®" />
+
+        </div>
+    </div>
     <div id="noise"></div>
     <div class="columns-container">
         <div style="opacity: 0;" class="column"></div>
@@ -29,16 +40,19 @@
             </div>
         </div>
         <header>
-            <img class="logo-brand-header" src="./public/content/brand/brand-staminaclub-monogram-louislebras.svg"
-                alt="">
+            <a href="./">
+                <img class="logo-brand-header" src="./public/content/brand/brand-staminaclub-monogram-louislebras.svg"
+                    alt="">
+            </a>
             <div class="container-list-header sidebar">
                 <a class="name-header smalltext" href="">Louis Le Bras</a>
                 <div class="items-menu smalltext sidebar-text">
+
                     <a href="./about/">About</a>
-                    <a href="">Vision</a>
-                    <a href="">Contact</a>
+                    <a href="./vision/">Vision</a>
+                    <a href="./contact/">Contact</a>
                 </div>
-                <a class="language-header smalltext sidebar-text" href="">Français</a>
+                <a class="language-header smalltext sidebar-text" href="./fr/">Français</a>
                 <div class="close-sidebar smalltext ">Close</div>
             </div>
             <p class="burger smalltext">Menu</p>
@@ -49,7 +63,7 @@
             <div class="container-infos-heading">
                 <h1 class="mediumtext">Brand Strategist / Producer</h1>
                 <p class="mediumtext">I help businesses to reveal, plan & execute their vision. <br>
-                    founder of the <a class="underlined" href="">STAMINA CLUB™</a></p>
+                    founder of the <a class="underlined" href="./staminaclub/">STAMINA CLUB™</a></p>
                 <img class="monogram-heading-home"
                     src="./public/content/brand/brand-staminaclub-monogram-louislebras.svg" alt="">
             </div>
@@ -98,11 +112,18 @@
                         Develop your brand singularity
                     </div>
                     <div class="empty-macaron smalltext">
-                        Accelerate your growth
+                        Extend your market share
                     </div>
                     <div class="empty-macaron smalltext">
-                        Reveal your brand potential
+                        Enhance your brand experience
                     </div>
+                    <div class="empty-macaron smalltext">
+                        Optimize your sales & marketing strategy
+                    </div>
+                    <div class="empty-macaron smalltext">
+                        Elevate your brand growth
+                    </div>
+
                 </div>
             </div>
             <div class="little-spacer">
@@ -111,14 +132,20 @@
             <div class="listcontent-intro">
                 <h4 class="mediumtext">I can help you to</h4>
                 <div class="listofcontent smalltext">
-                    Faire vivre la plateforme de marque <br>
-                    Adopter un nouveau positionnement <br>
-                    Différenciation concurrentielle <br>
-                    Développer votre vision <br>
-                    Aligner les objectifs commerciaux avec la stratégie de marque <br>
-                    Obtenir de nouvelles idées d’opportunité business <br>
-                    Développer la proposition de valeur <br>
-                    Développer la singularité de la marque <br>
+                    Develop your vision <br>
+                    Adopt/adjust your brand positioning <br>
+                    Build or deploy a brand platform <br>
+                    Develop your brand identity + branding <br>
+                    Align your customer experience <br>
+                    Develop your value proposition <br>
+                    Define your brand voice <br>
+                    Build your marketing strategy <br>
+                    Reveal your brand power <br>
+                    Align business goals with brand <br>
+                    Get new opportunity ideas <br> <br>
+                    And much more...
+
+
                 </div>
             </div>
         </section>
@@ -126,25 +153,25 @@
         <section class="cases-container">
             <h3 class="bigtext">Showcase</h3>
             <div class="four-cases-container">
-                <a href="" class="case-card">
+                <a href="./cases/nike/" class="case-card">
                     <p class="reference-name  smalltext">Nike</p>
                     <img class="background-case-container" src="./public/content/medias/background-case-nike.webp"
                         alt="">
                     <img class="logo-case" src="./public/content/medias/logo-nike.svg" alt="">
                 </a>
-                <a href="" class="case-card">
+                <a href="./cases/kitchenaid/" class="case-card">
                     <p class="reference-name  smalltext">Kitchen Aid</p>
                     <img class="background-case-container" src="./public/content/medias/background-case-kitchenaid.webp"
                         alt="">
                     <img class="logo-case logo-kitchenaid" src="./public/content/medias/logo-kitchenaid.svg" alt="">
                 </a>
-                <a href="" class="case-card">
+                <a href="./cases/fraseryachts/" class="case-card">
                     <p class="reference-name  smalltext">Fraser Yacht</p>
                     <img class="background-case-container" src="./public/content/medias/background-case-fraser.webp"
                         alt="">
                     <img class="logo-case logo-fraser" src="./public/content/medias/fraseryacht-logo.svg" alt="">
                 </a>
-                <a href="" class="case-card">
+                <a href="./cases/donzelli/" class="case-card">
                     <p class="reference-name  smalltext">Donzelli</p>
                     <img class="background-case-container" src="./public/content/medias/background-case-donzelli.webp"
                         alt="">
@@ -167,8 +194,8 @@
                 experience" / Brian Solis. <br> <span class="underlined">Open to new horizons now ↗︎</span> </p>
 
             <div class="little-spacer"></div>
-            <a class="smalltext underlined2 linktoabout" href="">Discover my journey since 2016 ↗︎</a>
-            <a class="smalltext underlined2 linktocontact" href="">Hire me ↗︎</a>
+            <a class="smalltext underlined2 linktoabout" href="./about/">Discover my journey since 2016 ↗︎</a>
+            <a class="smalltext underlined2 linktocontact" href="./contact/">Hire me ↗︎</a>
 
         </section>
 
@@ -184,6 +211,7 @@
                         research and insights <br>
                         brand experience audit <br>
                         brand platform <br>
+                        brand architecture <br>
                         brand tactics <br>
                         global experience strategy <br>
                         growth strategy</p>
@@ -193,24 +221,24 @@
             <div class="listcontent-intro">
                 <h4 class="mediumtext"></h4>
                 <div class="container-list-services">
-                    <p class="smalltext category-service-name">Strategy</p>
-                    <p class="smalltext">client strategy <br>
-                        corporate and design strategy <br>
-                        project management <br>
-                        research and insights <br>
-                        brand experience audit <br>
-                        brand platform <br>
-                        brand tactics <br>
-                        global experience strategy <br>
-                        growth strategy</p>
+                    <p class="smalltext category-service-name">Execution</p>
+                    <p class="smalltext">brand design <br>
+                        copywriting <br>
+                        design workshops <br>
+                        sales + acquisition systems <br>
+                        data + insights (growth) <br>
+                        media planning <br>
+                        brand communication <br>
+                        marketing (SEA, Socials...)</p>
                 </div>
             </div>
         </section>
-        <div class="medium-spacer"></div>
+        <div class="little-spacer"></div>
+        <a class="smalltext underlined2 linktocontact" href="./contact/">If I can help you ↗︎</a>
+        <div class="little-spacer"></div>
         <img class="profile-louislebras" src="./public/content/medias/louislebras-profile.webp" alt="">
 
-        <div class="little-spacer"></div>
-        <a class="smalltext underlined2 linktocontact" href="">If I can help you ↗︎</a>
+
 
         <div class="medium-spacer"></div>
 
@@ -233,7 +261,7 @@
             </div>
 
             <div class="little-spacer"></div>
-            <a class="smalltext underlined2 linktostaminaclub" href="">More info ↗︎</a> <br> <br>
+            <a class="smalltext underlined2 linktostaminaclub" href="./staminaclub/">More info ↗︎</a> <br> <br>
             <a class="smalltext macaron linktostaminaclub" href="">Launch coming soon</a>
 
 

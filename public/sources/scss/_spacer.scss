@@ -1,3 +1,13 @@
+.mini-spacer {
+  height: 2vh;
+}
+
+@media (max-width: 800px) {
+  .mini-spacer {
+    height: 2.5vh;
+  }
+}
+
 .little-spacer {
   height: 10vh;
 }

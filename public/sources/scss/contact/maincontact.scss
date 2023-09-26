@@ -1,0 +1,17 @@
+.container-contact-page {
+  padding-top: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .container-contact-page {
+    padding-top: 10vh;
+  }
+}
+
+a {
+  height: fit-content;
+}
